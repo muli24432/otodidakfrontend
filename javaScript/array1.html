@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array 1 dimensi</title>
+</head>
+<body>
+    <script>
+        let data = [];
+        let angka = prompt("Ketik jumlah elemen array : ");
+        for(a=0;a < angka;a++){
+            let bilangan = prompt("masukkan bilangan ke - "+(a+1)+":");
+            data[a]=bilangan;
+        }
+        for(b=0;b<angka;b++){
+            document.write("element array data["+b+"] = "+ data[b]+"<br>");
+        }
+    </script>
+</body>
+</html>

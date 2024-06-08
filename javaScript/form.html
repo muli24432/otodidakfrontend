@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        h1{
+            color:bisque;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .form1{
+            text-align: center;
+        }
+        .int :hover {
+            color: brown;
+            border-radius: 10px;
+            box-shadow: 10pt;
+
+        }
+    </style>
+</head>
+<body>
+    <H1>MEMBUAT FORM LOGIN</H1>
+    <form onsubmit="validasi()" class="form1">
+        <div >
+            <label>Nama lengkap</label>
+            <input type="text" id="nama">
+            <input type="submit" value="daftar" class="in">
+           
+        </div>
+    </form>
+    <script>
+        function validasi(){
+            let nama = document.getElementById("nama").value;
+            document.write("Hello "+nama.toUpperCase()+" terimaksih sudah mendaftar semoga harimu menyenangkan")
+        }
+    </script>
+</body>
+</html>
